@@ -37,7 +37,7 @@
     Public Shared Function run(Optional args As String = "")
         Dim _args As String = "+@ShutdownOnFailedCommand 1 +@NoPromptForPassword 1 +login " +
             settings.username + " " + settings.password +
-            " +force_install_dir " + settings.steamappsPath + " " +
+            " +force_install_dir """ + settings.steamappsPath + """ " +
             args + " +quit"
 
         Return runShell("steamcmd.exe", settings.steamcmdPath, _args)
