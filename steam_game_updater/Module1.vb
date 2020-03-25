@@ -19,6 +19,7 @@
             Else
                 Console.WriteLine("Update failed")
             End If
+            Environment.ExitCode = 1
         Else
             Console.WriteLine("Already up to date.")
         End If
